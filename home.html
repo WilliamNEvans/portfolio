@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home — Tan Background with Four Slideshows</title>
+<style>
+/* Full-page tan background */
+html, body {
+  margin: 0;
+  background-color: tan;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Top-left name */
+.greeting {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 530;
+  color: #2b2b2b;
+  user-select: none;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+.greeting span {
+  text-transform: uppercase;
+  font-size: clamp(3rem, 3vw, 2rem);
+  line-height: .8;
+}
+.greeting .there {
+  margin-left: 4rem;
+  font-size: clamp(3rem, 3vw, 2rem);
+}
+
+/* Top-right About link */
+.about-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 530;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: clamp(3rem, 3vw, 2rem);
+}
+.about-link:hover {
+  text-decoration: underline;
+}
+
+/* Slideshow + description wrapper */
+.slideshow-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 1rem;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .slideshow-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .slideshow-text {
+    max-width: 300px;
+    margin-left: 1rem;
+  }
+    .poking-image {
+    top: 70%;
+  right: -32%; /* 2/3 hidden */
+  transform: translateY(-50%);
+  height: 80%; /* adjust size */
+  z-index: 10;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 95%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Large slideshows (1st and 2nd) */
+.slideshow-large {
+  max-width: 900px;
+}
+
+/* Small slideshows (3rd and 4th) */
+.slideshow-small {
+  max-width: 450px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+/* Right-side poking image */
+.poking-image {
+  position: absolute;
+  top: 70%;
+  right: -32%; /* 2/3 hidden */
+  transform: translateY(-50%);
+  height: 80%; /* adjust size */
+  z-index: 10;
+  pointer-events: none; /* doesn't block clicks */
+}
+</style>
+</head>
+<body>
+<a href="about.html" class="about-link">About</a>
+<div class="greeting">
+  <span>William</span>
+  <span class="there">Evans</span>
+</div>
+
+<!-- First slideshow + text -->
+<div class="slideshow-section">
+  <div class="slideshow-container slideshow-large" id="slideshow1">
+    <div class="slide fade"><img src="orange.png" alt="Slide 1"></div>
+    <div class="slide fade"><img src="pink.png" alt="Slide 2"></div>
+    <div class="slide fade"><img src="white.png" alt="Slide 3"></div>
+  </div>
+  <div class="slideshow-text">
+    <p>2024</p>
+<p>Posters, 17 by 22 inches</p>
+
+        <p>Each of this posters is an informative history of a single font. I took inspiration from the font’s shapes themselves and from the designers that created them. Old punk posters from the The Cramps, the Clash, and the Damned also inspired me. Negative space and abstraction were very important in each of these posters. I wanted to design something that was dynamic and tasteful. I kept most of the typography black because too much color would have made the posters not show of the beauty of the glyphs. Combining characters was something I did in all 3 posters. By doing this I created unique shapes that make the posters stand out.</p>
+<p>Haettenschweiler</p>
+<p>For Haettenschweiler I used black and white glyphs with an orange background. The bold glyphs were fun to work with and I wanted to bring that power out in the poster. </p>
+<p>Wilhelm Klingspor Gotisch</p>    
+	<p>For Wilhelm Klingspor Gotisch I used black letters with a pink background. This is an old blackletter font and I wanted to give it a bright new look. The glyphs on each side balance out the piece while showing off the complex and shape glyphs.</p>
+<p>Century Schoolbook</p>
+	<p>For Century Schoolbook I explored the curves and elegance of the font. The blue 7 stands out and grabs the viewer's attention while the green moves the eyes around the piece. 
+</p>
+  </div>
+</div>
+
+<!-- Second slideshow + text -->
+<div class="slideshow-section">
+  <div class="slideshow-container slideshow-large" id="slideshow2">
+    <div class="slide fade"><img src="xart.jpg" alt="Slide A"></div>
+    <div class="slide fade"><img src="xart3.jpg" alt="Slide B"></div>
+    <div class="slide fade"><img src="xart2.jpg" alt="Slide C"></div>
+  </div>
+  <div class="slideshow-text">
+    <p>Mural for USF art building</p>
+<p>2025</p>
+<p>Mural, 125 by 191.5 inches</p>
+	<p>This mural created for the University of San Francisco’s art building (Xarts) with the help of two other classmates, Akwani and Anais. The mural is located in an elevator alcove and I wanted to bring a fun and happy design to the dark space. The idea of the mural is that a cat is chasing a red ball of yarn around and it knows over a cup filled with art tools and materials. As the cat jumps away the materials spill out toward the viewer along with the words, Xarts, art and architecture. Light colors and a fun scene succeeded in making this space effective. 
+
+</p>
+  </div>
+</div>
+
+<!-- Third slideshow + text -->
+<div class="slideshow-section">
+  <div class="slideshow-container slideshow-small" id="slideshow3">
+    <div class="slide fade"><img src="steve1.png" alt="Slide 1"></div>
+    <div class="slide fade"><img src="steve2.png" alt="Slide 2"></div>
+    <div class="slide fade"><img src="steve3.png" alt="Slide 3"></div>
+    <div class="slide fade"><img src="steve4.png" alt="Slide 4"></div>
+    <div class="slide fade"><img src="steve5.png" alt="Slide 5"></div>
+    <div class="slide fade"><img src="steve6.png" alt="Slide 6"></div>
+    <div class="slide fade"><img src="steve7.png" alt="Slide 7"></div>
+    <div class="slide fade"><img src="steve8.png" alt="Slide 8"></div>
+  </div>
+  <div class="slideshow-text">
+    <p>2023</p>
+<p>Small magazines, 5 by 3 ¼ in </p>
+<p>Steve</p>
+	<p>My zine titled “Steve” is an interview with one of my friends that I skateboard with. There are so many interviews with celebrities and popular figures. I wanted to interview someone that I look up to. The design is dynamic because of the bright colors and how I established a grid and then broke it. using one of his favorite albums by the Cranberries, To The Faithful Departed, as design inspiration, I created a zine that captures Steve and all his awesomeness. 
+
+</p>
+  </div>
+</div>
+
+<!-- Fourth slideshow + text -->
+<div class="slideshow-section">
+  <div class="slideshow-container slideshow-small" id="slideshow4">
+    <div class="slide fade"><img src="worms1.png" alt="Slide 1"></div>
+    <div class="slide fade"><img src="worms2.png" alt="Slide 2"></div>
+    <div class="slide fade"><img src="worms3.png" alt="Slide 3"></div>
+    <div class="slide fade"><img src="worms4.png" alt="Slide 4"></div>
+    <div class="slide fade"><img src="worms5.png" alt="Slide 5"></div>
+    <div class="slide fade"><img src="worms6.png" alt="Slide 6"></div>
+    <div class="slide fade"><img src="worms7.png" alt="Slide 7"></div>
+    <div class="slide fade"><img src="worms8.png" alt="Slide 8"></div>
+  </div>
+  <div class="slideshow-text">
+    <p>2023</p>
+<p>Small magazines, 5 by 3 ¼ in </p>
+<p>Dried Up Worms</p>
+	<p>“Dried Up Worms” is a zine that explores beauty and simplicity. It features poems and illustrations from my journal. I designed this zine to compliment my art. The blue frames add some elegant color and texture to the the poem pages. Bruce Rogers’ work was an inspiration while creating this. Bruce Rodgers is a pioneer in book design.
+</p>
+  </div>
+</div>
+
+<!-- Poking image -->
+<img src="plaidpat.png" alt="Decorative poking image" class="poking-image">
+
+<script>
+function startSlideshow(containerId, interval) {
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(`#${containerId} .slide`);
+
+  function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, interval);
+  }
+
+  showSlides();
+}
+
+// Start all slideshows
+startSlideshow("slideshow1", 3000);
+startSlideshow("slideshow2", 4000);
+startSlideshow("slideshow3", 5000);
+startSlideshow("slideshow4", 6000);
+</script>
+</body>
+</html>
