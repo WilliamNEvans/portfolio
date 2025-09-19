@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About — Tan Background</title>
+<style>
+html, body {
+  margin: 0;
+  background-color: tan;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Top-left name */
+.greeting {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 530;
+  color: #2b2b2b;
+  user-select: none;
+}
+.greeting span {
+  text-transform: uppercase;
+  font-size: clamp(3rem, 3vw, 2rem);
+  line-height: .8;
+}
+.greeting .there {
+  margin-left: 4rem;
+  font-size: clamp(3rem, 3vw, 2rem);
+}
+
+/* Top-right back link */
+.back-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 530;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: clamp(3rem, 3vw, 2rem);
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* About content pinned to right */
+.about-content {
+  margin: 6rem 2rem 2rem auto;
+  color: #2b2b2b;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 900px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Image gallery - single row */
+.mural-images {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: nowrap;            /* force one row */
+  overflow-x: auto;             /* allow scrolling if needed */
+  padding-bottom: 1rem;
+}
+
+.mural-image {
+  flex: 0 0 auto;               /* keep natural size */
+  width: 250px;                 /* set a consistent width */
+}
+
+.mural-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    align-items: center;
+    text-align: center;
+    margin: 6rem auto 2rem auto;
+  }
+  .mural-images {
+    justify-content: flex-start;
+  }
+}
+</style>
+</head>
+<body>
+<a href="index.html" class="back-link">BACK</a>
+<div class="greeting">
+  <span>William</span>
+  <span class="there">Evans</span>
+</div>
+
+<div class="about-content">
+  <h1>Dried Up Worms</h1>
+  <p>2023</p>
+<p>Small magazines, 5 by 3 ¼ in </p>
+
+	<p>“Dried Up Worms” is a zine that explores beauty and simplicity. It features poems and illustrations from my journal. I designed this zine to compliment my art. The blue frames add some elegant color and texture to the the poem pages. Bruce Rogers’ work was an inspiration while creating this. Bruce Rodgers is a pioneer in book design.
+</p>
+  <!-- All images in one horizontal row -->
+  <div class="mural-images">
+    <div class="mural-image"><img src="worms1.png" alt="Steve 1"></div>
+    <div class="mural-image"><img src="worms2.png" alt="Steve 2"></div>
+    <div class="mural-image"><img src="worms3.png" alt="Steve 3"></div>
+    <div class="mural-image"><img src="worms4.png" alt="Steve 4"></div>
+    <div class="mural-image"><img src="worms5.png" alt="Steve 5"></div>
+    <div class="mural-image"><img src="worms6.png" alt="Steve 6"></div>
+    <div class="mural-image"><img src="worms7.png" alt="Steve 7"></div>
+    <div class="mural-image"><img src="worms8.png" alt="Steve 8"></div>
+  </div>
+</div>
+</body>
+</html>
