@@ -56,6 +56,36 @@ color: #2b2b2b;
 font-size: 1.2rem;
 line-height: 1.6;
 }
+.poking-image {
+  position: absolute;
+  height: 10vw;   /* scales with viewport width */
+  max-width: 40vw;
+  z-index: 0;
+  pointer-events: none; /* doesn't block clicks */
+}
+
+/* Position variations */
+.poking-image.original {
+  top: 70%;
+  right: 0; 
+  transform: translateY(-50%);
+}
+.poking-image.pos1 {
+  top: 65%;
+  right: 0%;
+}
+.poking-image.pos2 {
+  top: 0%;
+  right: 20%;
+  height: 6vw;       /* smaller size just for pos2 */
+  max-width: 12vw; 
+}
+.poking-image.pos3 {
+  bottom:0%;
+  left: 70%;
+    
+  
+}
 </style>
 </head>
 <body>
@@ -74,5 +104,9 @@ line-height: 1.6;
 <p>Contact: vimevans9@gmail.com</p>
 <p>Resume: COMING SOON!</p>
 </div>
+<img src="plaidpat2.png" alt="Decorative poking image" class="poking-image original">
+<img src="plaidpat1.png" alt="Decorative poking image" class="poking-image pos1">
+<img src="plaidpat3.png" alt="Decorative poking image" class="poking-image pos2">
+<img src="plaidpat4.png" alt="Decorative poking image" class="poking-image pos3">
 </body>
 </html>

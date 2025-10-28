@@ -68,14 +68,6 @@ html, body {
     margin-left: 1rem;
     z-index: 10;
   }
-    .poking-image {
-      position: absolute;
-    top: 70%;
-  right: -32%; /* 2/3 hidden */
-  transform: translateY(-50%);
-  height: 80%; /* adjust size */
-  z-index: 0;
-  }
 }
 
 /* Slideshow container */
@@ -89,7 +81,7 @@ html, body {
 
 /* Large slideshows (1st and 2nd) */
 .slideshow-large {
-  max-width: 900px;
+  max-width: 700px;
   z-index: 10;
 }
 
@@ -119,17 +111,56 @@ html, body {
   to {opacity: 1}
 }
 
-/* Right-side poking image */
+/* Base poking image */
+/* Base poking image */
 .poking-image {
   position: absolute;
-  top: 70%;
-  right: 0; /* 2/3 hidden */
-  transform: translateY(-50%);
-  height: auto; /* adjust size */
+  height: 10vw;   /* scales with viewport width */
   max-width: 40vw;
   z-index: 0;
   pointer-events: none; /* doesn't block clicks */
 }
+
+/* Position variations */
+.poking-image.original {
+  top: 70%;
+  right: 0; 
+  transform: translateY(-50%);
+}
+.poking-image.pos1 {
+  top: 65%;
+  right: 0%;
+}
+.poking-image.pos2 {
+  top: 0%;
+  right: 20%;
+  height: 6vw;       /* smaller size just for pos2 */
+  max-width: 12vw; 
+}
+.poking-image.pos3 {
+  bottom:1;
+  left: 40%;
+  
+}
+.poking-image.pos4 {
+  top: 180%;
+  right: 0; 
+  transform: translateY(-50%);
+}
+.poking-image.pos5 {
+  top: 165%;
+  right: 0%;
+}
+.poking-image.pos6 {
+  top: 380%;
+  right: 0; 
+  transform: translateY(-50%);
+}
+.poking-image.pos7 {
+  top: 375%;
+  right: 0%;
+}
+
 </style>
 </head>
 <body>
@@ -147,12 +178,9 @@ html, body {
     <div class="slide fade"><img src="white.png" alt="Slide 3"></div>
   </div>
   <div class="slideshow-text">
-   <p>Typography Posters</p>
+    <p>Typography Posters</p>
     <p>2024</p>
-
-
-      
-<a href="type.html" >More</a>
+    <a href="type.html">More</a>
   </div>
 </div>
 
@@ -165,9 +193,8 @@ html, body {
   </div>
   <div class="slideshow-text">
     <p>Mural for USF art building</p>
-<p>2025</p>
-
-<a href="mural.html" >More</a>
+    <p>2025</p>
+    <a href="mural.html">More</a>
   </div>
 </div>
 
@@ -184,11 +211,9 @@ html, body {
     <div class="slide fade"><img src="steve8.png" alt="Slide 8"></div>
   </div>
   <div class="slideshow-text">
-
-<p>Steve</p>
-<p>2023</p>
-	
-<a href="steve.html" >More</a>
+    <p>Steve</p>
+    <p>2023</p>
+    <a href="steve.html">More</a>
   </div>
 </div>
 
@@ -205,16 +230,21 @@ html, body {
     <div class="slide fade"><img src="worms8.png" alt="Slide 8"></div>
   </div>
   <div class="slideshow-text">
-<p>Dried Up Worms</p>
- <p>2023</p>
-	
-<a href="worms.html" >More</a>
+    <p>Dried Up Worms</p>
+    <p>2023</p>
+    <a href="worms.html">More</a>
   </div>
 </div>
 
-<!-- Poking image -->
-<img src="plaidpat.png" alt="Decorative poking image" class="poking-image">
-
+<!-- Multiple poking images -->
+<img src="plaidpat2.png" alt="Decorative poking image" class="poking-image original">
+<img src="plaidpat1.png" alt="Decorative poking image" class="poking-image pos1">
+<img src="plaidpat3.png" alt="Decorative poking image" class="poking-image pos2">
+<img src="plaidpat4.png" alt="Decorative poking image" class="poking-image pos3">
+<img src="plaidpat2.png" alt="Decorative poking image" class="poking-image pos4">
+<img src="plaidpat1.png" alt="Decorative poking image" class="poking-image pos5">
+<img src="plaidpat2.png" alt="Decorative poking image" class="poking-image pos6">
+<img src="plaidpat1.png" alt="Decorative poking image" class="poking-image pos7">
 <script>
 function startSlideshow(containerId, interval) {
   let slideIndex = 0;
