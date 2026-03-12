@@ -160,14 +160,18 @@ html, body {
   top: 375%;
   right: 0%;
 }
+.logo {
+  width: clamp(220px, 10vw, 300px);
+  height: auto;
+  display: block;
+}
 
 </style>
 </head>
 <body>
 <a href="about.html" class="about-link">ABOUT</a>
 <div class="greeting">
-  <span>William</span>
-  <span class="there">Evans</span>
+  <img src="Mylogo1.png" alt="William Evans logo" class="logo">
 </div>
 
 <!-- First slideshow + text -->
@@ -181,6 +185,17 @@ html, body {
     <p>Typography Posters</p>
     <p>2024</p>
     <a href="type.html">More</a>
+  </div>
+</div>
+
+<div class="slideshow-section">
+  <div class="slideshow-container slideshow-large" id="slideshow2">
+    <div class="slide fade"><img src="Snowdayjpg.jpg" alt="Slide A"></div>
+  </div>
+  <div class="slideshow-text">
+    <p>Sow Day Tour Poster</p>
+    <p>2025</p>
+    <a href=".html">More</a>
   </div>
 </div>
 
@@ -201,14 +216,17 @@ html, body {
 <!-- Third slideshow + text -->
 <div class="slideshow-section">
   <div class="slideshow-container slideshow-small" id="slideshow3">
-    <div class="slide fade"><img src="steve1.png" alt="Slide 1"></div>
-    <div class="slide fade"><img src="steve2.png" alt="Slide 2"></div>
-    <div class="slide fade"><img src="steve3.png" alt="Slide 3"></div>
-    <div class="slide fade"><img src="steve4.png" alt="Slide 4"></div>
-    <div class="slide fade"><img src="steve5.png" alt="Slide 5"></div>
-    <div class="slide fade"><img src="steve6.png" alt="Slide 6"></div>
-    <div class="slide fade"><img src="steve7.png" alt="Slide 7"></div>
-    <div class="slide fade"><img src="steve8.png" alt="Slide 8"></div>
+    <div class="slide fade"><img src="steve1.jpg" alt="Slide 1"></div>
+    <div class="slide fade"><img src="stevemockup1.jpg" alt="Slide 2"></div>
+    <div class="slide fade"><img src="stevemockup2.jpg" alt="Slide 3"></div>
+    <div class="slide fade"><img src="steve4.jpg" alt="Slide 4"></div>
+    <div class="slide fade"><img src="steve5.jpg" alt="Slide 5"></div>
+    <div class="slide fade"><img src="steve6.jpg" alt="Slide 6"></div>
+    <div class="slide fade"><img src="steve7.jpg" alt="Slide 7"></div>
+    <div class="slide fade"><img src="steve8.jpg" alt="Slide 8"></div>
+    <div class="slide fade"><img src="steve8.jpg" alt="Slide 9"></div>
+    <div class="slide fade"><img src="steve8.jpg" alt="Slide 10"></div>
+
   </div>
   <div class="slideshow-text">
     <p>Steve</p>
@@ -220,14 +238,16 @@ html, body {
 <!-- Fourth slideshow + text -->
 <div class="slideshow-section">
   <div class="slideshow-container slideshow-small" id="slideshow4">
-    <div class="slide fade"><img src="worms1.png" alt="Slide 1"></div>
-    <div class="slide fade"><img src="worms2.png" alt="Slide 2"></div>
+    <div class="slide fade"><img src="worms1.jpg" alt="Slide 1"></div>
+    <div class="slide fade"><img src="wormsmockup1.jpg" alt="Slide 8"></div>
+    <div class="slide fade"><img src="wormsmockup2.jpg" alt="Slide 8"></div>
+    <div class="slide fade"><img src="worms2.jpg" alt="Slide 2"></div>
     <div class="slide fade"><img src="worms3.png" alt="Slide 3"></div>
     <div class="slide fade"><img src="worms4.png" alt="Slide 4"></div>
     <div class="slide fade"><img src="worms5.png" alt="Slide 5"></div>
-    <div class="slide fade"><img src="worms6.png" alt="Slide 6"></div>
-    <div class="slide fade"><img src="worms7.png" alt="Slide 7"></div>
-    <div class="slide fade"><img src="worms8.png" alt="Slide 8"></div>
+    <div class="slide fade"><img src="worms6.jpg" alt="Slide 6"></div>
+    <div class="slide fade"><img src="worms7.jpg" alt="Slide 7"></div>
+    <div class="slide fade"><img src="worms8.jpg" alt="Slide 8"></div>
   </div>
   <div class="slideshow-text">
     <p>Dried Up Worms</p>
@@ -245,6 +265,8 @@ html, body {
 <img src="plaidpat1.png" alt="Decorative poking image" class="poking-image pos5">
 <img src="plaidpat2.png" alt="Decorative poking image" class="poking-image pos6">
 <img src="plaidpat1.png" alt="Decorative poking image" class="poking-image pos7">
+<img src="Mylogo1.png" alt="Decorative poking image" class="poking-image pos8">
+
 <script>
 function startSlideshow(containerId, interval) {
   let slideIndex = 0;
