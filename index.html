@@ -165,6 +165,30 @@ html, body {
   height: auto;
   display: block;
 }
+.single-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.snowday-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 1rem;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .snowday-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.snowday-text {
+  max-width: 300px;
+}
+
 
 </style>
 </head>
@@ -175,6 +199,8 @@ html, body {
 </div>
 
 <!-- First slideshow + text -->
+
+
 <div class="slideshow-section">
   <div class="slideshow-container slideshow-large" id="slideshow1">
     <div class="slide fade"><img src="orange.png" alt="Slide 1"></div>
@@ -183,39 +209,105 @@ html, body {
   </div>
   <div class="slideshow-text">
     <p>Typography Posters</p>
-    <p>2024</p>
     <a href="type.html">More</a>
   </div>
 </div>
 
 <div class="slideshow-section">
   <div class="slideshow-container slideshow-large" id="slideshow2">
-    <div class="slide fade"><img src="Snowdayjpg.jpg" alt="Slide A"></div>
+    <div class="slide fade"><img src="MockUPDangerTone1.png" alt="Slide 1"></div>
+    <div class="slide fade"><img src="MockUPDangerTone1.jpg" alt="Slide 2"></div>
+    <div class="slide fade"><img src="MockUPDangerTone3.jpg" alt="Slide 3"></div>
+    <div class="slide fade"><img src="MockUPDangerTone4.jpg" alt="Slide 4"></div>
+    <div class="slide fade"><img src="Big Billboard Mockup_DT.jpg" alt="Slide 5"></div>
+    <div class="slide fade"><img src="DT_card2.jpg" alt="Slide 6"></div>
+    <div class="slide fade"><img src="DT-MacBook Pro Mockups2.jpg" alt="Slide 7"></div>
+    <div class="slide fade"><img src="Iphone X in Hand Mockup_DT.jpg" alt="Slide 8"></div>
+
+
   </div>
   <div class="slideshow-text">
-    <p>Sow Day Tour Poster</p>
-    <p>2025</p>
-    <a href=".html">More</a>
+    <p>Danger Tone Speaker</p>
+    <a href="about.html">More</a>
+  </div>
+</div>
+
+<div class="slideshow-section">
+  <div class="slideshow-container slideshow-large" id="slideshow3">
+    <div class="slide fade"><img src="ArtBroIphoneMock.jpg" alt="Slide 1"></div>
+    <div class="slide fade"><img src="ArtBroIphoneMock2.jpg" alt="Slide 2"></div>
+    <div class="slide fade"><img src="ArtBroIphoneMock3.jpg" alt="Slide 3"></div>
+  </div>
+  <div class="slideshow-text">
+    <p>ArtBro App</p>
+    <a href="about.html">More</a>
+  </div>
+</div>
+
+<div class="slideshow-section">
+  <div class="slideshow-container slideshow-large" id="slideshow4">
+    <div class="slide fade"><img src="SpiderMacMockup.jpg" alt="Slide 1"></div>
+    <div class="slide fade"><img src="SpiderMacMockup2.jpg" alt="Slide 2"></div>
+    <div class="slide fade"><img src="SpiderMobilMockup.jpg" alt="Slide 3"></div>
+  </div>
+  <div class="slideshow-text">
+    <p>Unlucky Spider Website</p>
+    <a href="about.html">More</a>
+  </div>
+</div>
+
+ <div class="snowday-section">
+  <div class="slideshow-container slideshow-large">
+    <img src="Snowdayjpg.jpg" alt="Snow Day Poster" class="single-image"> 
+  </div>
+
+  <div class="snowday-text">
+    <p>Snow Day Tour Poster</p>
+    <a href="snowday.html">More</a>
+  </div>
+</div>
+
+</div>
+
+ <div class="snowday-section">
+  <div class="slideshow-container slideshow-large">
+    <img src="BenjiOath.jpg" alt="Snow Day Poster" class="single-image"> 
+  </div>
+
+  <div class="snowday-text">
+    <p>Oath Hardware Ad for Benji Miller</p>
+    <a href="about.html">More</a>
+  </div>
+</div>
+
+<div class="slideshow-section">
+  <div class="slideshow-container slideshow-large" id="slideshow5">
+    <div class="slide fade"><img src="OathPackaging1.PNG" alt="Slide 1"></div>
+    <div class="slide fade"><img src="82002.jpg" alt="Slide 2"></div>
+    <div class="slide fade"><img src="14292.jpg" alt="Slide 3"></div>
+  </div>
+  <div class="slideshow-text">
+    <p>Unlucky Spider Website</p>
+    <a href="about.html">More</a>
   </div>
 </div>
 
 <!-- Second slideshow + text -->
 <div class="slideshow-section">
-  <div class="slideshow-container slideshow-large" id="slideshow2">
-    <div class="slide fade"><img src="xart.jpg" alt="Slide A"></div>
-    <div class="slide fade"><img src="xart3.jpg" alt="Slide B"></div>
-    <div class="slide fade"><img src="xart2.jpg" alt="Slide C"></div>
+  <div class="slideshow-container slideshow-large" id="slideshow6">
+    <div class="slide fade"><img src="xart.jpg" alt="Slide 1"></div>
+    <div class="slide fade"><img src="xart3.jpg" alt="Slide 2"></div>
+    <div class="slide fade"><img src="xart2.jpg" alt="Slide 3"></div>
   </div>
   <div class="slideshow-text">
     <p>Mural for USF art building</p>
-    <p>2025</p>
     <a href="mural.html">More</a>
   </div>
 </div>
 
 <!-- Third slideshow + text -->
 <div class="slideshow-section">
-  <div class="slideshow-container slideshow-small" id="slideshow3">
+  <div class="slideshow-container slideshow-small" id="slideshow7">
     <div class="slide fade"><img src="steve1.jpg" alt="Slide 1"></div>
     <div class="slide fade"><img src="stevemockup1.jpg" alt="Slide 2"></div>
     <div class="slide fade"><img src="stevemockup2.jpg" alt="Slide 3"></div>
@@ -230,14 +322,13 @@ html, body {
   </div>
   <div class="slideshow-text">
     <p>Steve</p>
-    <p>2023</p>
     <a href="steve.html">More</a>
   </div>
 </div>
 
 <!-- Fourth slideshow + text -->
 <div class="slideshow-section">
-  <div class="slideshow-container slideshow-small" id="slideshow4">
+  <div class="slideshow-container slideshow-small" id="slideshow8">
     <div class="slide fade"><img src="worms1.jpg" alt="Slide 1"></div>
     <div class="slide fade"><img src="wormsmockup1.jpg" alt="Slide 8"></div>
     <div class="slide fade"><img src="wormsmockup2.jpg" alt="Slide 8"></div>
@@ -251,7 +342,6 @@ html, body {
   </div>
   <div class="slideshow-text">
     <p>Dried Up Worms</p>
-    <p>2023</p>
     <a href="worms.html">More</a>
   </div>
 </div>
@@ -285,11 +375,17 @@ function startSlideshow(containerId, interval) {
   showSlides();
 }
 
+
 // Start all slideshows
 startSlideshow("slideshow1", 3000);
 startSlideshow("slideshow2", 4000);
 startSlideshow("slideshow3", 5000);
 startSlideshow("slideshow4", 6000);
+startSlideshow("slideshow5", 7000);
+startSlideshow("slideshow6", 8000);
+startSlideshow("slideshow7", 9000);
+startSlideshow("slideshow8", 10000);
+
 </script>
 </body>
 </html>
