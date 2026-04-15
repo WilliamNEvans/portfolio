@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DangerTone — Tan Background</title>
+<style>
+html, body {
+  margin: 0;
+  background-color: tan;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Top-left name */
+.greeting {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 530;
+  color: #2b2b2b;
+  user-select: none;
+}
+.greeting span {
+  text-transform: uppercase;
+  font-size: clamp(3rem, 3vw, 2rem);
+  line-height: .8;
+}
+.greeting .there {
+  margin-left: 4rem;
+  font-size: clamp(3rem, 3vw, 2rem);
+}
+
+/* Top-right back link */
+.back-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 530;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: clamp(3rem, 3vw, 2rem);
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* About content pinned to right */
+.about-content {
+  margin: 1rem 2rem 2rem auto;  /* push content to right */
+  color: #2b2b2b;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 900px;             /* width for text only */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Three images independent from text */
+.mural-images {
+  display: flex;
+  justify-content: flex-end;  /* push images to the right */
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: nowrap;           /* keep images in one row on desktop */
+}
+
+.mural-image {
+  flex: 0 0 53%;               /* each image ~1/3 of container */
+  max-width: 53%;
+}
+
+.mural-image img {
+  width: 100%;
+  height: auto;
+ 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    align-items: center;
+    text-align: center;
+    margin: 6rem auto 2rem auto;
+  }
+  .mural-images {
+    flex-wrap: wrap;           /* allow wrapping on mobile */
+    justify-content: center;   /* center images */
+  }
+  .mural-image {
+    flex: 1 1 80%;             /* images scale and stack */
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+}
+.logo {
+  width: clamp(220px, 10vw, 300px);
+  height: auto;
+  display: block;
+}
+</style>
+</head>
+<body>
+<a href="index.html" class="back-link">BACK</a>
+<div class="greeting">
+  <img src="Mylogo1.png" alt="William Evans logo" class="logo">
+</div>
+
+<div class="about-content">
+  <h1>Hohokam Signage Proposal</h1>
+  <p>2026</p>
+  <p>Sign, 7ft 3in by 1ft 3in</p>
+  <p>
+  This was for Wowhaus during my internship. Wowhaus was making public art for some public spaces around Phoenix, Arizona. My job was to mock up and design interpretive signage that explained the history of the site. The signage had to have a presence in the landscape, be accessible, and have enough room for visual elements and all the information that needed to be communicated. The goal was to teach people about the rich but often forgotten history of the Hohokam people, Native Americans that built very advanced irrigation canal systems.
+  </p>
+ <p>More Info: <a href="https://docs.google.com/document/d/1h-yoak_NmbQN9vG5_GotqeR94tkCcpMOswsPa0puREM/edit?usp=sharing" target="_blank">View Case Study</a></p>
+
+  <!-- Three larger images side by side -->
+  <div class="mural-images">
+    <div class="mural-image"><img src="ArizonaMockup1.png" alt="Mural 1"></div>
+<div class="mural-image">
+  <img src="SignPlan5-100.jpg" alt="Mural 2">
+</div>    <div class="mural-image"><img src="CACTUS GRAPHIC.png" alt="Mural 3"></div>
+  </div>
+  
+</body>
+</html>

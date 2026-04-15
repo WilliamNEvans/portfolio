@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DangerTone — Tan Background</title>
+
+<style>
+html, body {
+  margin: 0;
+  background-color: tan;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Top-left name */
+.greeting {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: 530;
+  color: #2b2b2b;
+  user-select: none;
+}
+.greeting span {
+  text-transform: uppercase;
+  font-size: clamp(3rem, 3vw, 2rem);
+  line-height: .8;
+}
+.greeting .there {
+  margin-left: 4rem;
+  font-size: clamp(3rem, 3vw, 2rem);
+}
+
+/* Top-right back link */
+.back-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 530;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: clamp(3rem, 3vw, 2rem);
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* About content pinned to right */
+.about-content {
+  margin: 1rem 2rem 2rem auto;  /* push content to right */
+  color: #2b2b2b;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 900px;             /* width for text only */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.logo {
+  width: clamp(220px, 10vw, 300px);
+  height: auto;
+  display: block;
+
+}
+
+/* FULL WIDTH GALLERY */
+.gallery {
+  column-count: 4;
+  column-gap: 1rem;
+  padding: 0 1rem 2rem 1rem;
+}
+
+/* Items */
+.gallery-item {
+  position: relative;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  overflow: hidden;
+}
+
+/* Images */
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Hover zoom */
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+/* Caption */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .gallery { column-count: 3; }
+}
+
+@media (max-width: 700px) {
+  .gallery { column-count: 2; }
+}
+
+@media (max-width: 500px) {
+  .gallery { column-count: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-link">BACK</a>
+
+<div class="greeting">
+  <img src="Mylogo1.png" alt="Logo" class="logo">
+</div>
+
+<div class="about-content">
+  <h1>Painting</h1>
+  <p>Acrylic</p>
+</div>
+
+<div class="gallery">
+
+  <div class="gallery-item">
+    <img src="Untitled_Evans_2.jpg">
+    <div class="caption">Untitled Evans 2</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="Untitled_Evans_3.jpg">
+    <div class="caption">Untitled Evans 3</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="Untitled_Evans_4.JPG">
+    <div class="caption">Untitled Evans 4</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="Untitled_Evans.jpg">
+    <div class="caption">Untitled Evans</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="Amelia_Evans.jpg">
+    <div class="caption">Amelia Evans</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="Untitled_Evans_5.jpg">
+    <div class="caption">Untitled Evans 5</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="Untitled_Evans_6.JPG">
+    <div class="caption">Untitled Evans 6</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="Untitled_Evans_7.jpg">
+    <div class="caption">Untitled Evans 7</div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="StillLife_Evans.jpg">
+    <div class="caption">Still Life</div>
+  </div>
+
+</div>
+
+</body>
+</html>
