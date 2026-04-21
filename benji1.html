@@ -96,6 +96,34 @@ html, body {
     margin-bottom: 1rem;
   }
 }
+.poking-image {
+  position: absolute;
+  height: 10vw;   /* scales with viewport width */
+  max-width: 40vw;
+  z-index: 0;
+  pointer-events: none; /* doesn't block clicks */
+}
+
+/* Position variations */
+.poking-image.original {
+  top: 70%;
+  left: 0; 
+  transform: translateY(-50%);
+}
+.poking-image.pos1 {
+  top: 65%;
+  left: 0%;
+}
+.poking-image.pos2 {
+  top: 0%;
+  left: 20%;
+  height: 6vw;       /* smaller size just for pos2 */
+  max-width: 12vw; 
+}
+.poking-image.pos3 {
+  bottom:0%;
+  left: 70%;
+}
 .logo {
   width: clamp(220px, 10vw, 300px);
   height: auto;
@@ -124,6 +152,9 @@ html, body {
   <div class="mural-images">
     <div class="mural-image"><img src="berkley cane.jpeg" alt="Mural 1"></div>
   </div>
+    <img src="plaidpat2.png" alt="Decorative poking image" class="poking-image original">
+  <img src="plaidpat1.png" alt="Decorative poking image" class="poking-image pos1">
+ <img src="plaidpat3.png" alt="Decorative poking image" class="poking-image pos2">
 </div>
 </body>
 </html>
